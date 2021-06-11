@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "RecyclerView_PAS_BimoIndracahya_10RPL2"
