@@ -34,36 +34,29 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-//    void addData(){
-//        friendsArrayList = new ArrayList<>();
-//        friendsArrayList.add(new Model("Dimas Maulana", "Jl.", "081222"));
-//        friendsArrayList.add(new Model("Budi", "Jl.", "081222"));
-//        friendsArrayList.add(new Model("Ani", "Jl.", "083333"));
-//    }
-
     private ArrayList<Model> getMyList() {
 
         ArrayList<Model> models = new ArrayList<>();
 
-        Model m = new Model("Bimo Indracahya Nugroho", "Jl.Padatkarya 15, nirwana curug, 02/02", "+62 877789548");
+        Model m = new Model("Bimo", "Jl.Padatkarya 15, nirwana curug, 02/02", "+62 877789548");
         models.add(m);
 
-        m = new Model("Kizu Shikamori", "385-1206, Motomachi", "+81 82475245");
+        m = new Model("Kizu", "385-1206, Motomachi", "+81 82475245");
         models.add(m);
 
-        m = new Model("Sano Uchihada", "467-1148, Minamitanaka Nakamurai", "+81 8754695214");
+        m = new Model("Sano", "467-1148, Minamitanaka Nakamurai", "+81 8754695214");
         models.add(m);
 
-        m = new Model("Johan", "Jl.Bojonegoro", "0877");
+        m = new Model("Johan", "Jl.Bojonegoro", "+81 82475245");
         models.add(m);
 
-        m = new Model("Shiro Shirayuki", "248-1272, Horyumachi Minamikuromaru", "+81 8754963215");
+        m = new Model("Shiro", "248-1272, Horyumachi Minamikuromaru", "+81 8754963215");
         models.add(m);
 
-        m = new Model("Roger Zurgberg", "123-231, New York", "+1 578246856");
+        m = new Model("Roger", "123-231, New York", "+1 578246856");
         models.add(m);
 
-        m = new Model("Shiro Shirayuki", "248-1272, Horyumachi Minamikuromaru", "+81 8796325412");
+        m = new Model("Shiro", "248-1272, Horyumachi Minamikuromaru", "+81 8796325412");
         models.add(m);
 
         m = new Model("Sukadi", "847-868 Hokkaido", "+81 879652354");
