@@ -8,6 +8,7 @@ import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -15,6 +16,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class FriendsAdapter extends RecyclerView.Adapter<FriendsHolder> {
+
+
+
 
     Context c;
     ArrayList<Model> models; //membuat list dimana parameter di definisikan di dalam model class
@@ -56,6 +60,12 @@ public class FriendsAdapter extends RecyclerView.Adapter<FriendsHolder> {
                 intent.putExtra("iAlamat", gAlamat);
                 intent.putExtra("iNoHp", gNoHp);
                 c.startActivity(intent);
+            }
+
+            @Override
+            public void onDeleteClick(int position) {
+                models.remove(position);
+                notifyDataSetChanged();
             }
         });
 

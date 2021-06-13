@@ -6,11 +6,11 @@ public class Model {
 
 
 
-//    public Model(String nama, String alamat, String noHp) {
-//        this.nama = nama;
-//        this.alamat = alamat;
-//        this.noHp = noHp;
-//    }
+    public Model(String nama, String alamat, String noHp) {
+        this.nama = nama;
+        this.alamat = alamat;
+        this.noHp = noHp;
+    }
 
     public String getNama() {
         return nama;
