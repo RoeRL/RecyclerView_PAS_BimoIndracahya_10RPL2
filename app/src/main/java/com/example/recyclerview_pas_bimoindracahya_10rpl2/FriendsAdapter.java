@@ -48,7 +48,7 @@ public class FriendsAdapter extends RecyclerView.Adapter<FriendsHolder> {
                 String gNama = models.get(position).getNama();
                 String gAlamat = models.get(position).getAlamat();
                 String gNoHp = models.get(position).getNoHp();
-
+//w
 
 
                 Intent intent = new Intent (c, DetailActivity.class);
