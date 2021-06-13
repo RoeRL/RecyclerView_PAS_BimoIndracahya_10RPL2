@@ -6,14 +6,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
 
     RecyclerView mRecyclerView;
-    FriendsAdapater mFriendsAdapter;
+    FriendsAdapter mFriendsAdapter;
 //    ArrayList<Model> friendsArrayList;
 
     @Override
@@ -27,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView = findViewById(R.id.recyclerView);
         mRecyclerView.setLayoutManager(layoutManager);
 
-        mFriendsAdapter = new FriendsAdapater(this, getMyList());
+        mFriendsAdapter = new FriendsAdapter(this, getMyList());
         mRecyclerView.setAdapter(mFriendsAdapter);
     }
 
@@ -44,45 +43,52 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Model> models = new ArrayList<>();
 
         Model m = new Model();
-        m.setNama("Bimo");
-        m.setAlamat("Jl.Kudus");
-        m.setNoHp("0877");
+        m.setNama("Bimo Indracahya Nugroho");
+        m.setAlamat("Jl.Padatkarya 15, nirwana curug, 02/02");
+        m.setNoHp("0877789548");
         models.add(m);
 
         m = new Model();
         m.setNama("Budi");
         m.setAlamat("Jl.Semarang");
         m.setNoHp("0877");
+        models.add(m);
 
         m = new Model();
         m.setNama("Ahmad");
         m.setAlamat("Jl.Jepara");
         m.setNoHp("0877");
+        models.add(m);
 
         m = new Model();
         m.setNama("Johan");
         m.setAlamat("Jl.Bojonegoro");
         m.setNoHp("0877");
+        models.add(m);
 
         m = new Model();
         m.setNama("Abdi");
         m.setAlamat("Jl.Pattimura");
         m.setNoHp("0877");
+        models.add(m);
 
         m = new Model();
         m.setNama("Roger");
         m.setAlamat("Jl.PadadKarya");
         m.setNoHp("0877");
+        models.add(m);
 
         m = new Model();
         m.setNama("Sugi");
         m.setAlamat("Jl.Diponegoro");
         m.setNoHp("0877");
+        models.add(m);
 
         m = new Model();
         m.setNama("Sukadi");
         m.setAlamat("Jl.Sultan Malik");
         m.setNoHp("0877");
+        models.add(m);
 
         return models;
     }
